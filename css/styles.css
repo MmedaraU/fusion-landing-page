@@ -1,0 +1,341 @@
+@import url("normalize.css");
+/*===== General Styles =====*/
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #aaa;
+}
+main {
+  width: 100vw;
+  max-width: 100%;
+}
+h1, h2, h3 {
+  color: #000;
+}
+h2 {
+  text-decoration: underline;
+  text-decoration-color: #fc5968;
+}
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 span {
+  font-size: 1rem;
+  text-transform: none;
+  font-weight: normal;
+  color: #aaa;
+  display: block;
+}
+i {
+  display: block;
+  margin: 5px auto;
+  border-radius: 50%;
+}
+
+button {
+  height: 3.125rem;
+  width: 9.375rem;
+  border: 1px solid #fc5968;
+  border-radius: 25px;
+  color: #fff;
+  background: crimson;
+  text-transform:uppercase;
+  margin: 5px;
+}
+button:hover {
+  color: #fc5968;
+  background: #fff;
+}
+
+section + h2 {
+  text-align:  center;
+}
+.features div, .team div, .pricing div {
+  box-shadow: 8px 8px 5px -3px;
+}
+svg {
+      height: 4em;
+      width: 2em;
+    }
+    .team svg {
+      width: 1em;
+      height: 1em;
+    }
+/*===== Header =====*/
+header {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3.125rem;
+}
+.logo {
+  grid-column: 1;
+  height: 3.125rem;
+}
+header nav {
+  grid-column: 3;
+}
+header li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  color: #000;
+}
+
+header li:hover {
+  color: #fc5968;
+}
+
+/*===== Banner =====*/
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 31.25rem;
+  background: url("/img/wavy.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: bottom;
+  padding: 0 0 0 10px;
+}
+.banner-img {
+  height: 18.75rem;
+}
+
+/*===== Services =====*/
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vw 20vw;
+  padding: 2px;
+  margin: 5px;
+}
+.services div {
+  margin: 12px;
+  text-align: center;
+}
+
+.no1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.no2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.no3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.no4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.no5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.no6 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/*===== Statistics ====*/
+.statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  padding: 0 0 0 10px;
+  background: url("/img/stat.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #eee;
+}
+
+/*===== Features ====*/
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  background: url("/img/feature-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+}
+.features div {
+  padding: 3px;
+  display: grid;
+  grid-template-rows: inherit;
+  grid-template-areas: "icon content";
+}
+.features h3 {
+  text-transform: capitalize;
+}
+.left {
+  text-align: right;
+  grid-template-columns: 2fr 1fr;
+}
+.right {
+  grid-template-columns: 1fr 2fr;
+}
+.right svg {
+  grid-area: icon;
+}
+.right aside {
+  grid-area: content;
+  text-align: left;
+}
+.features div:empty {
+  box-shadow: none;
+}
+/*===== Team ====*/
+.team {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  background: #eee;
+}
+.team div {
+  margin: 40px 10px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: inherit;
+}
+.team img {
+  display: block;
+  height: 167px;
+}
+.team aside, .team h3 {
+  text-align: left;
+}
+.team svg {
+  margin: 5px;
+}
+
+
+/*===== Pricing ====*/
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  text-align: center;
+}
+.pricing div {
+  margin: 0 20px 10px 20px;
+}
+.pricing i {
+  background: #e0e0e0;
+  width: 70px;
+  height: 70px;
+}
+.pricing i:hover {
+  background: #ff1744;
+}
+
+.pricing svg:hover {
+  fill: #fff;
+}
+.price {
+  font-size: 2rem;
+  color: #fc5968;
+}
+.pricing aside {
+  padding-top: 20px;
+}
+/*===== Unnamed ====*/
+.unnamed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  background: #ff1744;
+}
+.unnamed div {
+  margin: 20px;
+  background: #fff;
+}
+.unnamed img {
+  display: block;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.unnamed span {
+  color: #000;
+  font-weight: inherit;
+}
+.unnamed p {
+  padding: 10px;
+}
+
+/*===== Trial ====*/
+.trial {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 150px;
+  padding: 10px;
+}
+.trial button {
+  margin: 20px;
+}
+
+/*===== Contact Form ====*/
+.contact-form {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 300px;
+  background: none;
+}
+input, textarea {
+  margin: 5px;
+}
+input[placeholder="Subject"] {
+  display: block;
+  width: 90%;
+}
+textarea {
+  width: 90%;
+  height: 100px;
+}
+iframe {
+  background: none;
+  display: block;
+  height: 300px;
+}
+/*===== Footer ====*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+  padding: 20px;
+}
+footer div {
+  color: #424242;
+  padding: 5px;
+}
+footer h3 {
+  text-align: left;
+}
+footer i {
+  display: inline-block;
+  width: 30px;
+  margin: 2px 5px;
+  /*border: none;*/
+}
+footer svg {
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+p i {
+  margin: 3px;
+}
+
+footer span {
+  grid-column: 1 / 5;
+  text-align: center;
+  color: #424242;
+}
