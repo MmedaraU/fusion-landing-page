@@ -1,2 +1,2 @@
 # fusion-landing-page
-Working with grid for thefirst time
+Working with grid for the first time
