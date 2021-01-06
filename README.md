@@ -1,3 +1,3 @@
 # fusion-landing-page
-The FusionnLanding page recreated using CSS Grid.  
+The Fusion Landing page recreated using CSS Grid.  
 First attempt at using Grid.
